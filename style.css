@@ -96,3 +96,17 @@ body {
 	z-index: 100;
 	margin: 0 .45vw;
 }
+
+/* Медиа-запросы для различных размеров экрана */
+@media screen and (max-width: 768px) {
+    .item {
+        flex-basis: calc(50% - 10px); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+}
